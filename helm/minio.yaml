@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  annotations:
+    openshift.io/description: ""
+    openshift.io/display-name: ""
+    openshift.io/requester: cluster-admin
+    openshift.io/sa.scc.mcs: s0:c34,c4
+    openshift.io/sa.scc.supplemental-groups: 1001130000/10000
+    openshift.io/sa.scc.uid-range: 1001130000/10000
+  creationTimestamp: "2024-02-15T23:55:09Z"
+  labels:
+    kubernetes.io/metadata.name: minio
+    pod-security.kubernetes.io/audit: restricted
+    pod-security.kubernetes.io/audit-version: v1.24
+    pod-security.kubernetes.io/warn: restricted
+    pod-security.kubernetes.io/warn-version: v1.24
+  name: minio
+  resourceVersion: "993310"
+  uid: aa69d6f4-e2d2-4411-9aed-86bfdec58b77
+spec:
+  finalizers:
+  - kubernetes
+status:
+  phase: Active
