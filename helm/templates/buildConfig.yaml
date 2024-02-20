@@ -15,8 +15,7 @@ spec:
       dockerfilePath: Containerfile
       from:
         kind: ImageStreamTag  
-        namespace: redhat-ods-applications
-        name: minimal-gpu:latest
+        name: cuda-notebook-custom:latest
   output:
     to:
       kind: ImageStreamTag
