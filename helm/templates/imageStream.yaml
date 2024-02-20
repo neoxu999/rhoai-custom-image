@@ -2,14 +2,15 @@ apiVersion: image.openshift.io/v1
 kind: ImageStream
 metadata:
   name: cuda-notebook-custom
-  namespace: ansible-automation-platform
+  namespace: default
 spec:
   lookupPolicy:
     local: false
   tags:
   - name: latest
     from:
-      kind: DockerImage
-      name: registry.redhat.io/ansible-automation-platform-24/ee-supported-rhel8
+      kind: ImageStreamTag  
+      namespace: redhat-ods-applications
+      name: minimal-gpu:latest
     referencePolicy:
       type: Source
