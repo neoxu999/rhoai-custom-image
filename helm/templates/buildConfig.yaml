@@ -1,7 +1,7 @@
 apiVersion: build.openshift.io/v1
 kind: BuildConfig
 metadata:
-  name: custom-pytorch-build 
+  name: target-custom-cuda-notebook 
   namespace: default
 spec:
   source:
@@ -15,10 +15,10 @@ spec:
       dockerfilePath: Containerfile
       from:
         kind: ImageStreamTag  
-        name: cuda-notebook-custom:latest
+        name: source-cuda-notebook:latest
   output:
     to:
       kind: ImageStreamTag
-      name: custom-pytorch-build:latest
+      name: target-custom-cuda-notebook:latest
   triggers:
   - type: ImageChange
