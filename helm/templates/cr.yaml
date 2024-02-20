@@ -4,10 +4,10 @@ metadata:
   name: image-builder
 rules:
 - apiGroups: ["build.openshift.io"]
-  resources: [""]
-  verbs: [""]
+  resources: ["*"]
+  verbs: ["*"]
   resourceNames: [""]  # Allow access to all secrets
 - apiGroups: ["image.openshift.io"]
-  resources: [""]
-  verbs: [""]
+  resources: ["*"]
+  verbs: ["*"]
   resourceNames: [""]  # Allow access to all secrets
