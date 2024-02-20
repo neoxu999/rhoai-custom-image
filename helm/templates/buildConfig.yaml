@@ -15,7 +15,7 @@ spec:
       dockerfilePath: Containerfile
       from:
         kind: ImageStreamTag  
-        name: cuda-notebook-custom:1.2
+        name: cuda-notebook-custom:latest
   output:
     to:
       kind: ImageStreamTag
