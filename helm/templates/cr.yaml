@@ -5,9 +5,8 @@ metadata:
 rules:
 - apiGroups: ["build.openshift.io"]
   resources: ["*"]
-  verbs: ["*"]
-  resourceNames: [""]  # Allow access to all secrets
+  verbs: verbs: ["get", "list", "watch", "create", "update", "patch", "delete"]
 - apiGroups: ["image.openshift.io"]
   resources: ["*"]
   verbs: ["*"]
-  resourceNames: [""]  # Allow access to all secrets
+  resourceNames: verbs: ["get", "list", "watch", "create", "update", "patch", "delete"]
