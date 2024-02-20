@@ -5,8 +5,7 @@ metadata:
 rules:
 - apiGroups: ["build.openshift.io"]
   resources: ["*"]
-  verbs: verbs: ["get", "list", "watch", "create", "update", "patch", "delete"]
+  verbs: ["get", "list", "watch", "create", "update", "patch", "delete"]
 - apiGroups: ["image.openshift.io"]
   resources: ["*"]
-  verbs: ["*"]
-  resourceNames: verbs: ["get", "list", "watch", "create", "update", "patch", "delete"]
+  verbs: ["get", "list", "watch", "create", "update", "patch", "delete"]
