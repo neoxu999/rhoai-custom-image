@@ -22,3 +22,7 @@ spec:
       name: target-custom-cuda-notebook2:latest
   triggers:
   - type: ImageChange
+  from:
+    kind: "ImageStreamTag"
+    name: "source-cuda-notebook:latest"
+  - type: ConfigChange
