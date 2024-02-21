@@ -10,7 +10,7 @@ spec:
   - name: latest
     from:
       kind: ImageStreamTag  
-      namespace: rredhat-ods-applications
+      namespace: redhat-ods-applications
       name: minimal-gpu:1.2
     referencePolicy:
       type: Source
