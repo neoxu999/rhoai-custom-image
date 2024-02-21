@@ -2,7 +2,7 @@ apiVersion: build.openshift.io/v1
 kind: BuildConfig
 metadata:
   name: target-custom-cuda-notebook 
-  namespace: edhat-ods-applications
+  namespace: redhat-ods-applications
 spec:
   source:
     type: Git
