@@ -11,6 +11,6 @@ spec:
     from:
       kind: ImageStreamTag  
       namespace: redhat-ods-applications
-      name: minimal-gpu:1.2
+      name: python:3.12
     referencePolicy:
       type: Source
